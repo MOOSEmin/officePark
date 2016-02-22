@@ -1,0 +1,65 @@
+﻿body
+{
+    font-family:Roboto;
+    background: url(....images/bars.png);
+    margin:0;
+    padding:0;
+
+}
+
+/*Nav Menu*/
+nav{
+    position:fixed;
+    position-
+    float:left;
+    width:12%;
+    height:100%;
+    position: fixed;
+    font-size:18px;
+    background-color:white;
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style-type:none;
+}
+li{
+    margin-left:8%;
+}
+a{
+    text-decoration:none;
+    color:black;
+    display:inline-block;
+    background-color:white;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition:all 0.35s;
+    padding:2px;
+    padding-left:6px;
+    padding-right:6px;
+    font-weight:300;
+    margin-left:5%
+}
+a:hover{
+    background-color:black;
+    color:white;
+    background-position:left bottom;
+    font-weight:300;
+}
+.pageSelector{
+    font-weight:500;
+    margin-left:0%
+}
+
+/*Content*/
+.contentWrapper{
+    position:absolute;
+    width:88%;
+    margin-left:12%;
+}
+.contentSection{
+    width:100%;
+    margin-top:1000px;
+    background-color:blue;
+}
