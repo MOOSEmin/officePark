@@ -1,11 +1,13 @@
 ﻿body
 {
     font-family:Roboto;
-    background: aqua;
+    background: black;
     margin:0;
     padding:0;
-
+    opacity: 1;
+    transition: 1s opacity;
 }
+
 
 /*Nav Menu*/
 nav{
@@ -50,6 +52,19 @@ a:hover{
     font-weight:500;
     margin-left:0%
 }
+.logo{
+    -webkit-transition-delay:5s;
+    -webkit-transition:0.8s;
+    transition: 1s;
+    width:100%;
+}
+.logo:hover{
+    -webkit-transition-delay:0.5s;
+    -webkit-transition:0.8s;
+    transition: 1s;
+    -webkit-filter:invert(100%)
+    
+}
 
 /*Content*/
 .contentWrapper{
@@ -61,9 +76,39 @@ a:hover{
 
 }
 .contentSection{
-    width:100%;
-    margin-top:1000px;
-    background-color:blue;
+    width:90%;
+    padding-left:5%;
+    padding-right:5%;
+    margin-top:600px;
+    background-color:rgba(0, 0, 0, 0.80);
+    min-height:600px;
+    color:white;
+}
+.splash{
+    font-weight:400;
+    font-size:300px;
+    text-align:center;
+    margin:auto;
+    margin-top:140px;
+}
+h1{
+    font-weight:400;
+    font-size:28px;
+}
+.title{
+    font-weight:300;
+    padding-top:80px;
+    font-size:48px;
+}
+.conLeft{
+    font-weight:300;
+    width:45%;
+    float:left;
+}
+.conRight{
+    font-weight:300;
+    width:45%;
+    float:right;
 }
 /*parallax*/
 .pFront{
@@ -80,7 +125,7 @@ a:hover{
 }
 .pBack{
     -webkit-transform: translateZ(-600px) scale(1);
-    transform: translateZ(-600px) scale(2);
+    transform: translateZ(-600px) scale(1);
     z-index: 2;
     position: absolute;
     top: 0;
@@ -90,10 +135,54 @@ a:hover{
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
+  .parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-3px);
+    transform: translateZ(-3px);
+    z-index:-1;
+  }
+
+    .parallax__layer--fore {
+    -webkit-transform: translateZ(1px);
+    transform: translateZ(1px);
+    z-index:1;
+    transform:scale(0.5);
+  }
 
 /*Filter*/
 .filter{
     -webkit-filter: blur(20px);
     width:100%;
     height:100%;
+}
+
+/*launch screen*/
+.launch{
+    background-color:black;
+    width:100%;
+    height:1080px;
+}
+.launch:after{
+    background-color:rgba(255, 255, 255, 0.00);
+    transition:all 0.5s;
 }
