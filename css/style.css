@@ -20,6 +20,7 @@ nav{
     background-color:white;
     margin:0;
     padding:0;
+    z-index: 5;
 }
 ul{
     list-style-type:none;
@@ -79,7 +80,7 @@ a:hover{
     width:90%;
     padding-left:5%;
     padding-right:5%;
-    margin-top:600px;
+    margin-top:500px;
     background-color:rgba(0, 0, 0, 0.80);
     min-height:600px;
     color:white;
@@ -100,6 +101,13 @@ h1{
     padding-top:80px;
     font-size:48px;
 }
+.conCenter{
+    font-weight:300;
+    width:90%;
+    text-align:center;
+    align-content:center;
+    margin:auto;
+}
 .conLeft{
     font-weight:300;
     width:45%;
@@ -110,6 +118,7 @@ h1{
     width:45%;
     float:right;
 }
+
 /*parallax*/
 .pFront{
     -webkit-transform: translateZ(0);
@@ -137,8 +146,10 @@ h1{
 }
   .parallax {
     height: 100vh;
+    /*Overflow breaks page anchor animations*/
     overflow-x: hidden;
     overflow-y: auto;
+
     -webkit-perspective: 1px;
     perspective: 1px;
   }
@@ -157,8 +168,8 @@ h1{
   }
 
   .parallax__layer--back {
-    -webkit-transform: translateZ(-3px);
-    transform: translateZ(-3px);
+    -webkit-transform: translateZ(-1px);
+    transform: translateZ(-1px);
     z-index:-1;
   }
 
@@ -177,12 +188,3 @@ h1{
 }
 
 /*launch screen*/
-.launch{
-    background-color:black;
-    width:100%;
-    height:1080px;
-}
-.launch:after{
-    background-color:rgba(255, 255, 255, 0.00);
-    transition:all 0.5s;
-}
