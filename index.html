@@ -7,39 +7,29 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-    <script>
-  $(function() {
-    $('a[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-    </script>
-
 </head>
 <body>
     <nav>
-        <a style="margin-left:0; padding:0; transition:all .5s;" href="index.html"><img class="logo" src="http://i418.photobucket.com/albums/pp264/sjdvda/rtuto-1.png"></a>
+        <a style="margin-left:-5%; padding:-2px; padding-left:-6px; padding-right:-6px; transition:all .5s;" href="index.html"><img class="default logo" src="http://i418.photobucket.com/albums/pp264/sjdvda/rtuto-1.png"></a>
         <ul>
-            <li style="margin-top:100px;"><a class="pageSelector" href="index.html">Home</a></li>
-            <li><a href="#location">Location</a></li>
-            <li><a href="#commute">Commute</a></li>
-            <li><a href="#environment">Environtment</a></li>
-            <li><a class="pageSelector" href="#">Contact</a></li>
-            <li><a class="pageSelector" href="community.html">Community</a></li>
-
+            <li style="margin-top:100px;"><a class="default pageSelector" href="index.html">Home</a></li>
+            <li><a class="default" href="#location">Location</a></li>
+            <li><a class="default" href="#commute">Commute</a></li>
+            <li><a class="default" href="#environment">Environtment</a></li>
+            <li><a class="default pageSelector" href="#">Contact</a></li>
+            <li><a class="default pageSelector" href="community.html">Community</a></li>
         </ul>
-        <ul></ul>
-    </nav>
+        <ul class="soc">
+            <li><a class="soc-twitter" href="#"></a></li>
+            <li><a class="soc-facebook" href="#"></a></li>
+            <li><a class="soc-google" href="#"></a></li>
+            <li><a class="soc-instagram" href="#"></a></li>
+            <li><a class="soc-email2" href="#"></a></li>
+            <li><a class="soc-pinterest" href="#"></a></li>
+            <li><a class="soc-linkedin" href="#"></a></li>
+            <li><a class="soc-rss soc-icon-last" href="#"></a></li>
+        </ul>
+</nav>
     <div class="contentWrapper parallax">
         <div class="parallax__layer parallax__layer--base">
             <div class="splash">
@@ -59,8 +49,16 @@
                 <h2 class="conCenter" style="padding:40px;"> For community members of the linbrook office space the south kirkland park and ride adipiscing elit. Nullam condimentum et eros ac porta. Ut aliquam, nibh eu porttitor tincidunt, ex tellus luctus massa, nec aliquet dolor ante convallis metus. Phasellus quis volutpat nisl. Ut imperdiet justo quis neque iaculis consectetur. Ut pellentesque urna et blandit mollis. Fusce est ex, ornare non malesuada eu, porta in nisi. Maecenas nec gravida velit. Curabitur eget tempor orci. Nunc hendrerit varius nibh vel hendrerit.  Curabitur enim odio, elementum at quam et, aliquet sagittis magna. adipiscing elit. Nullam condimentum et eros ac porta. Ut aliquam, nibh eu porttitor tincidunt, ex tellus luctus massa, nec aliquet dolor ante convallis metus. Phasellus quis volutpat nisl. Ut imperdiet justo quis neque iaculis consectetur. Ut pellentesque urna et blandit mollis. Fusce est ex, ornare non malesuada eu, porta in nisi. Maecenas nec gravida velit. Curabitur eget tempor orci. Nunc hendrerit varius nibh vel hendrerit.  Curabitur enim odio, elementum at quam et, aliquet sagittis magna.</h2>
             </div>
 
+            <div class="contentSection"style="padding-bottom:65px;" id="environment">
+                <h1 class="title">Environment</h1>
+                <div class="conLeft"><img style="width:100%;" src="http://www.profitableplantsdigest.com/wp-content/uploads/2012/09/Tree-walnut-plantation.jpg"></div>
+                <h2 class="conRight">The location of linbrook office park is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum et eros ac porta. Ut aliquam, nibh eu porttitor tincidunt, ex tellus luctus massa, nec aliquet dolor ante convallis metus. Phasellus quis volutpat nisl. Ut imperdiet justo quis neque iaculis consectetur. Ut pellentesque urna et blandit mollis. Fusce est ex, ornare non malesuada eu, porta in nisi. Maecenas nec gravida velit. Curabitur eget tempor orci. Nunc hendrerit varius nibh vel hendrerit.  Curabitur enim odio, elementum at quam et, aliquet sagittis magna.</h2>
+            </div>
         </div>
-        <div class="parallax__layer parallax__layer--back"><img style="transform:rotate(-90deg); margin-left:-307%; width:714%;" src="images/background.jpg"></div>
+        <div class="parallax__layer parallax__layer--back">
+            <img style="width:100%; margin:0; padding:0;" src="images/background.jpg">
+            <img style="width:100%; margin:0; padding:0;" src="images/background1.jpg">
+        </div>
 
     </div>
 
