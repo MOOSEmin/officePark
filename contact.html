@@ -3,20 +3,21 @@
 <html>
 <head>
     <title>Kirkland Office Parks</title>
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="images/star.png">
+
 </head>
 <body>
     <nav>
         <a style="margin-left:0; padding:0; transition:all .5s;" href="index.html"><img class="logo" src="http://i418.photobucket.com/albums/pp264/sjdvda/rtuto-1.png"></a>
         <ul>
-            <li style="margin-top:100px;"><a class="pageSelector" href="index.html">Home</a></li>
-            <li><a class="pageSelector" href="contact.html">Contact</a></li>
-            <li><a class="pageSelector" href="community.html">Community</a></li>
+            <li style="margin-top:100px;"><a class="default pageSelector" href="index.html">Home</a></li>
+            <li><a class="default pageSelector" href="contact.html">Contact</a></li>
+            <li><a class="default pageSelector" href="community.html">Community</a></li>
         </ul>
-        <ul style="margin-top:60px;">
+        <ul style="margin-top:139px;">
             <li><span style="font-weight:500">Call Us:</span><br><span style="font-weight:300;">206-123-9999</span></li>
         </ul>
         <div class="iconWrapper">
@@ -31,7 +32,26 @@
         </div>
     </nav>
     <div class="conMain">
-        
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <div style="float:left;">
+                <div class="row">
+                    <h3>Your name:</h3>
+                    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                </div> <br>
+                <div class="row">
+                    <h3>Your email:</h3>
+                    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                </div>
+                <input id="submit_button" type="submit" value="Send email" />
+
+            </div>
+            <div style="float:right;">
+                <div class="row">
+                    <label for="message">Your message:</label><br />
+                    <textarea id="message" class="input" name="message" rows="10" cols="50"></textarea><br />
+                </div>
+            </div>
+        </form>
     </div>
     <div class="conBack">
         <img height="955px;" src="images/officePark.png">
